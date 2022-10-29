@@ -57,5 +57,12 @@ class urinalsTest{
     }
 
 
+    @Test
+    @DisplayName("====== Shivanjay Wagh == Test Case if Non Empty File =======")
+    void emptyFile()  {
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        File file = new File(classLoader.getResource("urinal.dat").getFile());
+        assertTrue(file.length() != 0);
+    }
 
 }
