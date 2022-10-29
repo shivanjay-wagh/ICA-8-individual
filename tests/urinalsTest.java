@@ -17,6 +17,12 @@ class urinalsTest{
         assertFalse(check);
     }
 
+    @Test
+    @DisplayName("====== Shivanjay Wagh == Good String Method -> good string test =======")
+    void is_Good_String() {
+        boolean check1 = urinals.goodString("010101");
+        assertTrue(check1);
+    }
 
 
 
