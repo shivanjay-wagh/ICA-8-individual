@@ -31,6 +31,13 @@ class urinalsTest{
         assertFalse(check2);
     }
 
+    @Test
+    @DisplayName("====== Shivanjay Wagh == Good String Method -> string length test =======")
+    void checkStringLength() {
+        boolean check1 = urinals.goodString("010101010101010101010101010101");
+        assertFalse(check1);
+    }
+
 
 
 
