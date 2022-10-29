@@ -46,6 +46,15 @@ class urinalsTest{
     }
 
 
+    @Test
+    @DisplayName("====== Shivanjay Wagh == Test Case if File Exists =======")
+    void fileNotFound()  {
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        URL fileURL = classLoader.getResource("urinal.dat");
+        assert fileURL != null;
+        File file = new File(fileURL.getFile());
+        assertTrue(file.exists());
+    }
 
 
 
