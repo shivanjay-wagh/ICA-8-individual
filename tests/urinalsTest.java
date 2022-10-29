@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.net.URL;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 class urinalsTest{
@@ -38,6 +37,13 @@ class urinalsTest{
         assertFalse(check1);
     }
 
+
+    @Test
+    @DisplayName("====== Shivanjay Wagh == countUrinals Method =======")
+    void countUrinals() {
+        int empty_Urinals = urinals.countUrinals("10001");
+        assertEquals(1, empty_Urinals);
+    }
 
 
 
